@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  genesis:
+    restart: always
+    build: .
+    container_name: 'genesis'
+    working_dir: '/mao/'
+    tty: true
+    volumes:
+      - ./opt:/mao/opt
