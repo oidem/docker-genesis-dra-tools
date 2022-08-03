@@ -3,7 +3,8 @@ services:
   genesis:
     restart: always
     build: .
-    container_name: 'genesis'
+    image: genesis
+    container_name: genesis
     working_dir: '/mao/'
     tty: true
     volumes:
